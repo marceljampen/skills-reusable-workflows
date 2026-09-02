@@ -4,10 +4,8 @@ run-name: Node ${{ inputs.node-version }} Quality Checks
 on:
   workflow_call:
     inputs:
-      node-version:
-        description: "Node.js version"
-        required: false
-        default: "20"
+      node:
+        required: true
         type: string
 
 permissions:
